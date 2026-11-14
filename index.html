@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"><meta name="viewport"
+            content="width=device-width,initial-scale=1"><meta
+            name="theme-color" content="#f4f4f2">
+        <title>T-Unleash — Apps for your Tesla</title><meta name="description"
+            content="Discover T-Unleash apps, their features, and installation resources.">
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+:root{--ink:#17191b;--muted:#72787b;--red:#dd392e;--line:#e3e5e3;--paper:#f5f6f4}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:#fff;font-family:'DM Sans',Arial,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}.topbar{height:78px;display:flex;align-items:center;justify-content:space-between;padding:0 6%;position:relative;z-index:2}.brand{font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:700;letter-spacing:-1.2px}.brand span{color:var(--red)}.nav{display:flex;gap:5px;background:#f0f1ef;padding:4px;border-radius:8px}.tab{border:0;background:transparent;padding:10px 23px;border-radius:6px;cursor:pointer;font-weight:700;font-size:13px;color:#6a6e70}.tab[aria-selected=true]{background:white;color:#191b1d;box-shadow:0 2px 7px #0000000d}.toplink{font-size:13px;font-weight:700}.toplink span{margin-left:8px}.hero{margin:0 2%;min-height:550px;border-radius:5px;overflow:hidden;background:linear-gradient(115deg,#e9eceb 0%,#f7f8f6 52%,#dfe4e2 100%);position:relative;display:flex;align-items:center;padding:7% 8%}.hero:after{content:'';position:absolute;right:-7%;top:-40%;height:170%;width:54%;transform:rotate(28deg);background:linear-gradient(90deg,#ffffff00,#ffffff80 35%,#a9b5b140 36%,#ffffff00 65%)}.hero-content{max-width:630px;position:relative;z-index:1}.eyebrow{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#777e7c;display:flex;align-items:center;gap:10px}.eyebrow:before{content:'';height:7px;width:7px;background:var(--red);border-radius:50%}h1,h2,h3{font-family:'Space Grotesk',sans-serif;letter-spacing:-.05em}h1{font-size:clamp(52px,7vw,100px);line-height:.98;margin:25px 0 24px}h1 span{color:var(--red)}.hero p{font-size:17px;line-height:1.7;color:#59615f;max-width:480px}.hero-actions{display:flex;gap:12px;margin-top:34px}.button{display:inline-flex;justify-content:center;align-items:center;gap:18px;padding:15px 22px;border-radius:5px;font-size:12px;font-weight:700;min-width:160px}.button.dark{background:#202324;color:#fff}.button.light{background:#ffffffa8}.hero-index{position:absolute;right:8%;bottom:9%;z-index:1;text-align:right;font-size:11px;letter-spacing:1.5px;color:#737b78}.hero-index strong{display:block;font-family:'Space Grotesk';font-size:72px;letter-spacing:-5px;line-height:1;color:#aab2ae}.section{max-width:1350px;padding:100px 6%;margin:auto}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:45px}.section-head h2{font-size:clamp(38px,5vw,60px);line-height:1;margin:15px 0 0}.section-head p{color:var(--muted);line-height:1.7;max-width:350px;font-size:14px}.app{border-top:1px solid var(--line);display:grid;grid-template-columns:70px minmax(200px,1fr) 1.4fr;gap:25px;padding:36px 0}.num{font:500 12px 'Space Grotesk';color:#9ba19e}.app h3{font-size:27px;margin:0 0 10px}.version{font-size:10px;letter-spacing:1.2px;color:var(--red);font-weight:700;text-transform:uppercase}.app-desc{font-size:14px;color:#6c7270;line-height:1.6;margin:14px 0 0;max-width:340px}.features{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}.features span{background:#f3f4f2;border-radius:3px;padding:9px 11px;font-size:12px;color:#424947}.links{display:flex;gap:22px;flex-wrap:wrap}.links a{font-size:12px;font-weight:700;border-bottom:1px solid #a7aca9;padding-bottom:4px}.links a:hover{color:var(--red);border-color:var(--red)}.note{font-size:12px;color:#888f8b;line-height:1.6;margin:16px 0 0}.wiring{background:#f4f5f3;min-height:600px}.wiring-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.wiring-card{background:#fff;padding:35px;min-height:210px}.wiring-card h3{font-size:25px;margin:15px 0}.wiring-card p{font-size:14px;line-height:1.7;color:#6c7270}.wiring-card a{display:inline-block;font-size:12px;font-weight:700;margin-top:12px;border-bottom:1px solid #aaa;padding-bottom:4px}.footer{border-top:1px solid var(--line);padding:35px 6%;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#888}.footer .brand{color:#17191b;font-size:17px}.hidden{display:none!important}@media(max-width:700px){.topbar{height:70px;padding:0 5%}.toplink{display:none}.tab{padding:10px 17px}.hero{min-height:520px;padding:12% 8%;align-items:flex-start}.hero-content{padding-top:40px}.hero-index{bottom:7%}.hero-index strong{font-size:50px}.section{padding:75px 6%}.section-head{display:block}.app{grid-template-columns:35px 1fr;gap:15px}.app-details{grid-column:2}.wiring-grid{grid-template-columns:1fr}.footer{gap:20px;align-items:flex-start;flex-direction:column}}
+
+.flasher-layout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(260px,.75fr);gap:22px}.flasher-card,.flasher-guide{background:#fff;padding:38px}.flasher-card h3,.flasher-guide h3{font-size:26px;margin:12px 0 22px}.flasher-card p,.flasher-guide p,.flasher-guide li{font-size:14px;color:#6c7270;line-height:1.7}.field{display:block;margin:24px 0}.field label{display:block;font-size:12px;font-weight:700;margin-bottom:10px}.field select{width:100%;min-height:52px;padding:0 15px;background:#f5f6f4;color:#17191b;border:1px solid #e2e5e2;border-radius:4px;font:inherit;font-size:14px}.flash-action{margin-top:28px}.flash-action button{border:0;cursor:pointer}.flash-action button:disabled{background:#d7dad7;color:#858b87;cursor:not-allowed}.flash-status{min-height:3em;margin:14px 0 0!important}.flasher-guide ol{padding-left:20px;margin:0}.flasher-guide li{padding:0 0 12px 5px}.browser-note{border-top:1px solid var(--line);padding-top:18px;margin-top:22px}.nav{flex-shrink:0}@media(max-width:700px){.flasher-layout{grid-template-columns:1fr}.flasher-card,.flasher-guide{padding:26px}.topbar{gap:10px}.tab{padding:10px 12px}}@media(max-width:370px){.brand{font-size:17px}.tab{padding:10px 8px}}
+
+.wiring-page{max-width:1350px;margin:auto;padding:90px 6% 100px}.wiring-intro{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:end;margin-bottom:54px}.wiring-intro h2{font-size:clamp(46px,6vw,78px);line-height:1;margin:20px 0 0}.wiring-intro p,.wiring-page p{color:#626a66;font-size:15px;line-height:1.75}.wiring-block{padding:55px 0;border-top:1px solid var(--line)}.wiring-block h3{font-size:clamp(28px,3vw,39px);margin:12px 0 15px}.wiring-block h4{font-family:'Space Grotesk',sans-serif;font-size:19px;margin:0 0 10px}.wiring-lead{max-width:750px}.verify-box{background:#222726;color:#fff;padding:34px 38px;border-radius:4px}.verify-box h3{margin:10px 0;font-size:27px}.verify-box p,.verify-box li{color:#d0d5d2;font-size:14px;line-height:1.7}.verify-box ol{padding-left:20px}.reference-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.reference-links a{padding:12px 15px;background:#fff;color:#222726;border-radius:4px;font-size:12px;font-weight:700}.hardware-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:25px}.hardware-item{background:#f3f5f2;padding:25px}.hardware-item p{margin:0}.pin-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:26px 0}.pin-card{background:#f4f5f3;padding:24px}.pin-card .pin{font:700 24px 'Space Grotesk',sans-serif;margin:12px 0}.pin-card p{font-size:13px;margin:0}.pin-card .version{line-height:1.5}.figure-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;align-items:start}.wiring-figure{margin:0;background:#f2f3f1;padding:12px}.wiring-figure img{display:block;width:100%;height:auto}.wiring-figure figcaption{font-size:12px;color:#717a75;line-height:1.6;padding:12px 5px 3px}.cable-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,.65fr);gap:40px;align-items:start}.cable-layout .wiring-figure img{max-height:480px;object-fit:contain;background:#171918}.cable-list{list-style:none;padding:0;margin:24px 0}.cable-list li{border-top:1px solid var(--line);padding:15px 0;font-size:14px;line-height:1.6;color:#626a66}.cable-list strong{color:#17191b}.notice{padding:20px 24px;background:#f3f5f2;border-left:3px solid var(--red);font-size:14px;color:#4c5550;line-height:1.7}.wiring-page a.inline-link{text-decoration:underline;text-underline-offset:4px}.wire-pair{font-size:12px;color:#7b827e;margin-top:8px}@media(max-width:700px){.wiring-page{padding:70px 6%}.wiring-intro,.cable-layout{grid-template-columns:1fr;gap:18px}.hardware-grid,.pin-grid{grid-template-columns:1fr}.figure-grid{grid-template-columns:1fr}.verify-box{padding:25px}.wiring-block{padding:42px 0}}
+</style>
+    </head>
+    <body>
+        <header class="topbar"><a class="brand" href="#top"
+                aria-label="T-Unleash home">T<span>·</span>UNLEASH</a><nav
+                class="nav" aria-label="Main navigation" role="tablist"><button
+                    class="tab" role="tab" id="tab-apps" aria-controls="apps"
+                    aria-selected="true">Apps</button><button class="tab"
+                    role="tab" id="tab-wiring" aria-controls="wiring"
+                    aria-selected="false" tabindex="-1">Wiring</button><button
+                    class="tab" role="tab" id="tab-flasher"
+                    aria-controls="flasher" aria-selected="false"
+                    tabindex="-1">Flash</button></nav><a
+                class="toplink" href="https://github.com/06066060606060"
+                target="_blank" rel="noopener noreferrer">GitHub
+                <span>↗</span></a></header>
+        <main id="top"><div id="apps" role="tabpanel"
+                aria-labelledby="tab-apps">
+                <section class="hero"><div
+                        class="hero-content"><h1><span>Unleash</span>
+                            the potential of your
+                            <span>Tesla</span></h1><p>Open-source ESP32 firmware
+                            to
+                            improve your driving experience.</p><div
+                            class="hero-actions"><a class="button dark"
+                                href="#collection">Explore the apps
+                                <span>↓</span></a><a class="button light"
+                                href="https://github.com/06066060606060"
+                                target="_blank" rel="noopener noreferrer">View
+                                on GitHub
+                                <span>↗</span></a></div></div></section>
+                <section class="section" id="collection"><div
+                        class="section-head"><div><div class="eyebrow">The
+                                collection</div><h2>A family of firmware
+                                for<br>every
+                                need.</h2></div><p>Explore the projects, their
+                            features, and the versions listed in the supplied
+                            documentation.</p></div>
+                    <article class="app"><div class></div><div><div
+                                class="version">v3.29.1 . Lilygo
+                                T2-CAN</div><h3>T2CAN
+                                Universal Unlock</h3><p class="app-desc">A
+                                versatile platform for Model 3, Model Y and
+                                Model YL.</p></div><div class="app-details"><div
+                                class="features"><span>EU Unlock</span><span>NAG
+                                    Killer</span><span>Advanced
+                                    EAP</span><span>Pedal Map</span><span>S3XY
+                                    Button Bluetooth</span><span>Vision Speed
+                                    Control</span><span>Country / Map Region
+                                    Spoof</span><span>Driver
+                                    Monitoring</span><span>Continuous AP
+                                    (experimental)</span><span>ISA chime
+                                    suppression</span><span>OTA
+                                    updates</span></div><div class="links"><a
+                                    href="https://github.com/06066060606060/t2can-universal-unlock">GitHub
+                                    repository ↗</a><a
+                                    href="https://github.com/06066060606060/t2can-universal-unlock/releases/tag/3.29.1">Release
+                                    3.29.1 ↗</a></div><p class="note">Some features
+                                require EAP or a valid EAP/FSD
+                                subscription.</p></div></article>
+                    <article class="app"><div class></div><div><div
+                                class="version">v2.6.0 · Lilygo
+                                T2-CAN</div><h3>Advanced
+                                EAP & EU-Unlock</h3><p class="app-desc">Advanced
+                                EAP and EU Unlock combined in one
+                                project.</p></div><div class="app-details"><div
+                                class="features"><span>Automatic turn signal in
+                                    NOA</span><span>Configurable
+                                    delay</span><span>Lane change
+                                    cancellation</span><span>R79 restriction
+                                    bypass</span><span>Summon range up to ±85
+                                    m</span><span>EAP lane change
+                                    features</span><span>TLSSC
+                                    activation</span><span>OTA
+                                    updates</span></div><div class="links"><a
+                                    href="https://github.com/06066060606060/Advanced-eap-eu-unlock">GitHub
+                                    repository ↗</a><a
+                                    href="https://github.com/06066060606060/Advanced-eap-eu-unlock/releases/tag/2.6">Release
+                                    2.6 ↗</a></div><p class="note">Some features
+                                require EAP or a valid EAP/FSD
+                                subscription.</p></div></article>
+                    <article class="app"><div class></div><div><div
+                                class="version">v3.8.4 · ESP32-S3
+                                standalone</div><h3>Nag-killer</h3><p
+                                class="app-desc">A tool designed to eliminate
+                                the hands-on-wheel prompt while using
+                                Autopilot/FSD.</p></div><div
+                            class="app-details"><div class="features"><span>H
+                                    mode “Human like”</span><span>Vehicle
+                                    profile</span><span>Dashboard</span><span>OTA
+                                    updates</span><span>Improved upload
+                                    handling</span></div><div class="links"><a
+                                    href="https://github.com/06066060606060/nag-killer">GitHub
+                                    repository ↗</a><a
+                                    href="https://github.com/06066060606060/nag-killer/releases/tag/3.8.4">Release
+                                    3.8.4 ↗</a></div></div></article>
+                    <article class="app"><div class></div><div><div
+                                class="version">v2.6.0 · ESP32-S3
+                                standalone</div><h3>EU Summon Unlock</h3><p
+                                class="app-desc">EU Unlock features and
+                                improvements to Summon logic.</p></div><div
+                            class="app-details"><div class="features"><span>R79
+                                    restriction bypass</span><span>Summon range
+                                    up to ±85 m</span><span>Expanded lateral
+                                    acceleration limits</span><span>EAP lane
+                                    changes and exits</span><span>TLSSC
+                                    activation and
+                                    restoration</span><span>Continue on green
+                                    with a car in front</span><span>OTA
+                                    updates</span></div><div class="links"><a
+                                    href="https://github.com/06066060606060/Summon-Unlock">GitHub
+                                    repository ↗</a><a
+                                    href="https://github.com/06066060606060/Summon-Unlock/releases/tag/2.6">Release
+                                    2.6 ↗</a></div><p class="note">Some features
+                                require EAP or a valid EAP/FSD
+                                subscription.</p></div></article>
+                    <article class="app"><div class></div><div><div
+                                class="version">v1.2.1 ·
+                                Android</div><h3>Dashboard Android</h3><p
+                                class="app-desc">Access firmware dashboard
+                                from your phone.</p></div><div
+                            class="app-details"><div
+                                class="features"><span>Local Wi-Fi
+                                    connection</span><span>Mobile data stays
+                                    available</span><span>Encrypted
+                                    credentials</span><span>Reconnect to a saved
+                                    device</span><span>Automatic dashboard
+                                    opening</span></div><div class="links"><a
+                                    href="https://github.com/06066060606060/t2can-universal-unlock/tree/android-app">Android
+                                    project ↗</a></div></div></article>
+                </section></div>
+            <div id="wiring" role="tabpanel" aria-labelledby="tab-wiring"
+                class="hidden">
+                <section class="wiring-page">
+                    <div class="wiring-intro"><div><div
+                                class="eyebrow">Connection
+                                guide</div><h2>Connect
+                                to<br>X179.</h2></div><p>Explore the vehicle CAN
+                            port, recommended hardware and an example cable
+                            setup. Always check the wiring for your specific
+                            vehicle before making a connection.</p></div>
+                    <div class="verify-box"><div class="version">Start here /
+                            Vehicle-specific verification</div><h3>Find your
+                            vehicle’s schematic.</h3><p>The X179 configuration
+                            can vary with the model, factory and production
+                            date. Confirm the connector view, pin numbers and
+                            CAN signals in Tesla’s electrical reference before
+                            wiring.</p><ol><li>Open the electrical reference for
+                                your Model 3 or Model Y.</li><li>Select the
+                                factory and production date for your
+                                vehicle.</li><li>In Interactive Schematics,
+                                search for <strong>X179</strong>, <strong>CAN
+                                    Port</strong> or <strong>PARTY
+                                    CAN</strong>.</li></ol><div
+                            class="reference-links"><a
+                                href="https://service.tesla.com/docs/Model3/ElectricalReference/">Model
+                                3 electrical reference ↗</a><a
+                                href="https://service.tesla.com/docs/ModelY/ElectricalReference/">Model
+                                Y electrical reference ↗</a></div></div>
+                    <section class="wiring-block"><div class="version">01 /
+                            Recommended hardware</div><h3>Choose your
+                            hardware.</h3><p class="wiring-lead">Recommended
+                            ESP32 options for connecting to the vehicle CAN
+                            networks.</p><div class="hardware-grid"><div
+                                class="hardware-item"><h4>AtomS3 Lite + CANBus Base
+                                    </h4><p>ESP32 board with a CAN
+                                    bus adapters.</p></div><div
+                                class="hardware-item"><h4>LilyGO
+                                    T2CAN</h4><p>ESP32 board with dual CAN bus
+                                    interfaces.</p></div>
+                                <div
+                                class="hardware-item"><h4>ESP32-P4 + SN65HVD230
+                                    </h4><p>ESP32 board with 3 CAN
+                                    bus base.</p></div></div><p
+                            class="wire-pair">The required interface and
+                            supported networks depend on the firmware and
+                            hardware configuration.</p></section>
+                    <section class="wiring-block"><div class="version">02 / X179
+                            example</div><h3>Know your CAN buses.</h3><p
+                            class="wiring-lead">The supplied example identifies
+                            three vehicle CAN networks for Model 3/Y. Pins below follow the
+                            <strong>vehicle-side</strong> illustration; they are
+                            not a substitute for the schematic for your own car.</p><div
+                            class="pin-grid"><div class="pin-card"><div
+                                    class="version">Chassis CAN / EU
+                                    Unlock</div><div class="pin">13
+                                    <small>+</small> &nbsp; 14
+                                    <small>−</small></div><p>Pin 13: CAN P /
+                                    High<br>Pin 14: CAN N / Low</p></div><div
+                                class="pin-card"><div class="version">Party CAN
+                                    / Nag-killer</div><div class="pin">2
+                                    <small>+</small> &nbsp; 3
+                                    <small>−</small></div><p>Pin 2: CAN P /
+                                    High<br>Pin 3: CAN N / Low</p></div><div
+                                class="pin-card"><div class="version">Body / VH
+                                    CAN / Auto lane change</div><div
+                                    class="pin">9 <small>+</small> &nbsp; 10
+                                    <small>−</small></div><p>Pin 9: CAN P /
+                                    High<br>Pin 10: CAN N /
+                                    Low</p></div></div><div
+                            class="figure-grid"><figure class="wiring-figure"><a
+                                    href="assets/x179-vehicle-side.png"><img
+                                        src="assets/x179-vehicle-side.png"
+                                        alt="Example X179 vehicle-side connector diagram showing Chassis, Body and Party CAN pins"
+                                        loading="lazy"></a><figcaption>Example
+                                    X179 connector viewed from the vehicle side.
+                                    Pin 1 and pin 20 are shown for reference;
+                                    the recommended power source below is
+                                    USB.</figcaption></figure></div></section>
+                    <section class="wiring-block"><div
+                            class="cable-layout"><div><div class="version">03 /
+                                    Recommended cable</div><h3>ENHAUTO GEN2
+                                    cable.</h3><p>Use the following wire groups
+                                    as a guide to the cable shown. Verify the
+                                    connector pin numbers and identify CAN High
+                                    and CAN Low before connecting them to the
+                                    matching CAN interface on your
+                                    hardware.</p><ul
+                                    class="cable-list"><li><strong>Green and
+                                            white</strong> · pins
+                                        13–14<br>Chassis CAN · EU
+                                        Unlock</li><li><strong>Black wires
+                                            above</strong> · pins 2–3<br>Party
+                                        CAN · Nag-killer</li><li><strong>Yellow
+                                            and black</strong> · pins
+                                        9–10<br>Body / VH CAN · auto lane
+                                        change</li></ul><p class="wire-pair">The
+                                    colors identify wire groups here; confirm
+                                    each individual wire’s pin and polarity for
+                                    your cable.</p></div><figure
+                                class="wiring-figure"><a
+                                    href="assets/gen2-cable.png"><img
+                                        src="assets/gen2-cable.png"
+                                        alt="ENHAUTO GEN2 cable with blue connectors and exposed wire groups"
+                                        loading="lazy"></a><figcaption>ENHAUTO
+                                    GEN2 cable example. Open the image to
+                                    inspect it in
+                                    detail.</figcaption></figure></div></section>
+                    <section class="wiring-block"><div class="version">04 /
+                            Power</div><h3>Power through USB.</h3><p
+                            class="wiring-lead">USB power from the glovebox is
+                            recommended instead of drawing power from the
+                            vehicle’s 12 V rail. Check on your vehicle that the
+                            USB supply turns off when the car sleeps; behavior
+                            may vary.</p><div class="notice">Connect the
+                            selected network’s CAN High and CAN Low to the
+                            corresponding CAN interface, after confirming both
+                            ends against the appropriate documentation. The
+                            interface, firmware and bus selection must match
+                            your setup.</div></section>
+                    <section class="wiring-block"><div class="version">05 /
+                            Hardware configurations</div><h3>Possible
+                            configurations.</h3><p class="wiring-lead">Examples
+                            of ESP32 and LilyGO T2CAN arrangements for different
+                            CAN networks and features. Check the configuration
+                            and firmware for your vehicle before
+                            connecting.</p><figure class="wiring-figure"><a
+                                href="assets/possible-configurations.png"><img
+                                    src="assets/possible-configurations.png"
+                                    alt="Examples of ESP32 and LilyGO T2CAN hardware arrangements using Party, Chassis and Body CAN networks, including a Model YL configuration"
+                                    loading="lazy"></a><figcaption>Example
+                                hardware and CAN bus configurations. Select the
+                                image to view it in full
+                                size.</figcaption></figure></section>
+                    <section class="wiring-block"><div class="version">06 /
+                            Vehicle configurations</div><h3>Verified
+                            wiring.</h3><p class="wiring-lead">A list of
+                            verified vehicle and hardware configurations will be
+                            added here. Until then, use the Tesla electrical
+                            reference for your exact vehicle and check the
+                            documentation for your selected hardware and
+                            firmware.</p></section>
+                </section>
+            </div>
+            <div id="flasher" role="tabpanel" aria-labelledby="tab-flasher"
+                class="hidden"><section class="section wiring">
+                    <div class="section-head"><div><div class="eyebrow">ESP32
+                                web flasher</div><h2>Ready to
+                                install.</h2></div><p>Choose your board and
+                            firmware to prepare an installation directly from
+                            your browser.</p></div>
+                    <div class="flasher-layout"><div class="flasher-card"><div
+                                class="version">01 / Choose your
+                                setup</div><h3>Your device. Your
+                                firmware.</h3><p>Select a board and a firmware.
+                                Availability is determined by the configured
+                                firmware manifest for each combination.</p>
+                            <div class="field"><label
+                                    for="flash-board">Board</label><select
+                                    id="flash-board"><option value>Select a
+                                        board</option><option
+                                        value="atoms3">ATOMS3</option><option
+                                        value="t2can">T2-CAN</option><option
+                                        value="p4">ESP32-P4</option></select></div>
+                            <div class="field"><label
+                                    for="flash-firmware">Firmware</label><select
+                                    id="flash-firmware" disabled><option
+                                        value>Select a board
+                                        first</option></select></div>
+                            <div class="flash-action" id="flash-action"><button
+                                    class="button dark" type="button"
+                                    disabled>Install firmware</button></div><p
+                                class="flash-status" id="flash-status"
+                                role="status" aria-live="polite">Select your
+                                board and firmware to continue.</p>
+                        </div><aside class="flasher-guide"><div
+                                class="version">02 / Before you
+                                start</div><h3>Connect and
+                                install.</h3><ol><li>Use a desktop browser with
+                                    Web Serial support, such as Chrome or
+                                    Edge.</li><li>Connect your board using a USB
+                                    data cable.</li><li>Select your board and
+                                    firmware, then choose the serial port when
+                                    prompted.</li></ol><p
+                                class="browser-note">Firmware links have not
+                                been added yet. Installation will become
+                                available once a manifest is configured for your
+                                selection.</p></aside></div>
+                </section></div></main>
+        <footer class="footer"><a class="brand"
+                href="#top">T<span>·</span>UNLEASH</a><span>Independent tools
+                for your Tesla experience.</span><a
+                href="https://github.com/06066060606060">GitHub ↗</a></footer>
+        <script src="flasher-config.js"></script>
+        <script src="flasher.js" defer></script>
+        <script>
+const tabs = [...document.querySelectorAll('[role="tab"]')];
+function activate(tab, updateHash = true) {
+  tabs.forEach(t => {
+    const selected = t === tab;
+    t.setAttribute('aria-selected', String(selected));
+    t.tabIndex = selected ? 0 : -1;
+    document.getElementById(t.getAttribute('aria-controls')).classList.toggle('hidden', !selected);
+  });
+  if (updateHash) history.replaceState(null, '', '#' + tab.getAttribute('aria-controls'));
+}
+tabs.forEach((tab, i) => {
+  tab.addEventListener('click', () => activate(tab));
+  tab.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+      e.preventDefault();
+      const next = tabs[(i + (e.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length];
+      activate(next); next.focus();
+    }
+  });
+});
+function syncTabFromHash() {
+  const target = tabs.find(t => '#' + t.getAttribute('aria-controls') === location.hash);
+  if (target) activate(target, false);
+}
+window.addEventListener('hashchange', syncTabFromHash);
+syncTabFromHash();
+
+</script>
+    </body></html>
